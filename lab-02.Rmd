@@ -94,8 +94,18 @@ plastic_data_all %>%
 
 ```{r Ex2, message = FALSE}
 # Write your code here to answer exercise 2
+<<<<<<< HEAD
 plastic_data_all <-plastic_data_all %>%
   mutate(total_mismanage_plastic = mismanaged_plastic  * population)
+=======
+
+library(dplyr)
+
+plastic_data_all <- plastic_data_all %>% 
+  mutate(total_mismanage_plastic = mismanaged_plastic*population)
+head(plastic_data_all)
+names(plastic_data_all)
+>>>>>>> a8b5d63cbcb17a4ba14e5ae51172a4668a6760a9
 
 
 ```
