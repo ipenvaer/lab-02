@@ -18,7 +18,7 @@ library(readxl)
 ```{r load-data, message = FALSE}
 # Member 2 (pair 1) write code to load File 1 data here:
 
-read_csv("data/mismanaged-plastic-waste-per-capita.csv")
+data1 <- read_csv("data/mismanaged-plastic-waste-per-capita.csv")
 
 # Member 4 (pair 2) write code to load File 2 data here:
 data2 <- read_csv2("data/per-capita-ocean-plastic-waste.txt")
@@ -63,7 +63,7 @@ plastic_data_all <- data4 %>%
   select(-name) %>%
   right_join(plastic_data_all, by = "code")
 
-
+  
 ```
 
 
