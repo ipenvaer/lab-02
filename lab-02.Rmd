@@ -96,9 +96,7 @@ plastic_data_all %>%
 # Write your code here to answer exercise 2
 plastic_data_all <-plastic_data_all %>%
   mutate(total_mismanage_plastic = mismanaged_plastic  * population)
-plastic_data_all %>%
-  summarise(mean_total = mean(total_mismanage_plastic, na.rm = TRUE)) %>% 
-  arrange(region)
+
   
 
 ```
